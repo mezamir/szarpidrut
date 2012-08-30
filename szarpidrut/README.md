@@ -52,5 +52,5 @@ Find `<resource>` element. Copy&Paste following xml fragment next to any other `
 `asadmin restart-domain`
 
 ## Don't hesitate deploy & run project
-1. `./scripts/buildRedeploy.sh`
-* `http://localhost:4848/jeedemo` 
+1. `buildRedeploy.sh`
+* `http://localhost:4848/szarpidrut` 
