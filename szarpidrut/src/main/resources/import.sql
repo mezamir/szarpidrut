@@ -1,0 +1,11 @@
+INSERT INTO instrument(name, brand, typ, registrationDate, description) VALUES ('Gothic Explorer', 'Epiphone', 'gitara', '2012-01-10', 'mahogany neck, mahogany, 2 humbucker pick-ups, 1 toggle switch, black chrome hardware, colour: pitch black')
+INSERT INTO instrument(name, brand, typ, registrationDate, description) VALUES ('Warlock Revenge WH', 'BC Rich', 'gitara', '2012-01-10', 'agathis body, rosewood fretboard, 24 jumbo frets, 2x BC Rich B.D.S.M. humbucker pickups, tune-o-matic bridge. Colour: White')
+INSERT INTO instrument(name, brand, typ, registrationDate, description) VALUES ('VL52K-TBB Silverstar', 'Tama', 'perkusja', '2012-01-10', 'Brzozowe korpusy (TT/FT/SD) 6ply, 6 mm; (BD) 7ply, 8 mm System mocowania Star-Mount Rozmiary: 22x18", 10x8", 12x9", 16x14, 14x5,5" ')
+INSERT INTO instrument(name, brand, typ, registrationDate, description) VALUES ('CTK-1200', 'Casio', 'klawisz', '2012-01-10', 'Keyboard, Klawiatura: 61 klawiszy, Barwy: 100, Rytmy: 100, Waga: 3.3 kg.')
+INSERT INTO instrument(name, brand, typ, registrationDate, description) VALUES ('Prelude', 'Roland', 'klawisz', '2012-01-10', 'Klawiatura: 61 klawiszy z dynamiką, Maksymalna polifonia: 128 głosów')
+INSERT INTO instrument(name, brand, typ, registrationDate, description) VALUES ('PV 500 MWR', 'Peavey', 'perkusja', '2012-01-11', 'Materiał: 9-warstwowa sklejka z drewna lipowego, Kolor: MWR (Metallic Wine Red), Waga transportowa: 36.3 kg.')
+
+INSERT INTO typ(id, nazwa) VALUES ('1', 'gitara')
+INSERT INTO typ(id, nazwa) VALUES ('2', 'klawisz')
+INSERT INTO typ(id, nazwa) VALUES ('3', 'perkusja')
+INSERT INTO typ(id, nazwa) VALUES ('4', 'instrument klasyczny')

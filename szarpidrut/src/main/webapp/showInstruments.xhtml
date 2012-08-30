@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/templates/default.xhtml">
+
+	<ui:define name="content">
+		<h:form>
+			<h:dataTable value="#{instrumentBean.allInstruments}" var="item">
+				<f:facet name="header">#{msg.instrumentAllLabel}</f:facet>
+				<h:column>
+					<f:facet name="header">#{msg.instrumentNameLabel}</f:facet>
+					<h:outputText value="#{item.name}" />
+				</h:column>
+
+				<h:column>
+					<f:facet name="header">#{msg.instrumentBrandLabel}</f:facet>
+					<h:outputText value="#{item.brand}" />
+				</h:column>
+
+				<h:column>
+					<f:facet name="header">#{msg.instrumentTypLabel}</f:facet>
+					<h:outputText value="#{item.typ}" />
+				</h:column>
+
+				<h:column>
+					<f:facet name="header">#{msg.action}</f:facet>
+					<h:commandLink value="#{msg.actionDelete}"
+						action="#{instrumentBean.deleteInstrument}" />
+					
+				</h:column>
+				
+				<h:column>
+					<h:commandLink action="details2?faces-redirect=true"> 
+					 <h:outputText value="#{msg.instrumentDescriptionLabel}" />
+					</h:commandLink>
+				</h:column>
+
+			</h:dataTable>
+		</h:form>
+
+	</ui:define>
+
+</ui:composition>
